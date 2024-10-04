@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="Ejercicios">
+            <img src="Captura de pantalla 2024-10-04 100401.png" alt="caso1" srcset="">
+
+        </div>
+        <hr>
+        <div id="solucion">
+            <script>
+                var nombre,curso,nota_inicial,nota_final,ratio,msg,faltas,clases;
+                nombre=prompt("ingrese el nombre del alumno");
+                curso=prompt("Ingrese el curso");
+                nota_inicial=parseFloat(prompt("ingrese la nota inicial"));
+                clases=parseInt(prompt("ingrese cantidad de clases del curso"));
+                faltas=parseInt(prompt("ingrese cantidad de faltas"));
+                ratio=faltas/clases;
+                if (ratio>0.20) {
+                    nota_final=0;
+                    msg="supero el 20% de inasistencias"
+                } else {
+                    nota_final=nota_inicial;
+                    msg="No supero el 20% de inasistencias";
+                }
+                document.write("===Reporte de resultados====="+"<br>");
+                document.write("Asignatura:"+curso+"<br>");
+                document.write("Nota_inicial:"+nota_inicial+"<br>");
+                document.write("Inacistencia:"+faltas+"<br>");
+                document.write("sesiones:"+clases+"<br>");
+                document.write("% inasistencias: " + (ratio * 100).toFixed(2) + "%" + "<br>");
+                document.write("Nota final:"+nota_final+"<br>");
+                document.write("obseravacion:"+msg+"<br>");
+                document.write("================");
+
+
+            </script>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+#cuadro{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: wheat;
+    border: 2px solid;
+    height: 500px;
+    padding: 20px;
+}
+h1{
+    color: blue;
+    background-color: greenyellow;
+    padding: 10px;
+}
+hr{
+    border: 2px solid black;
+}
+#resultado{
+    border:2px solid grey;
+    height: 300px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 10px 15px 5px grey;
+    
+}
